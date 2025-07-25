@@ -60,3 +60,4 @@ typedef NTSTATUS(NTAPI* NtQueryInformationProcess_t)(HANDLE, PROCESSINFOCLASS, P
 typedef NTSTATUS(NTAPI* NtUnmapViewOfSection_t)(HANDLE ProcessHandle,PVOID  BaseAddress);
 
 
+// ilovedik
