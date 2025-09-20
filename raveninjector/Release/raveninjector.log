@@ -1,0 +1,12 @@
+﻿  ShellTechs.c
+D:\Projects\raveninjector\techniques\ShellTechs.c(114,41): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+D:\Projects\raveninjector\techniques\ShellTechs.c(114,41): warning C4024: 'QueueUserAPC': different types for formal and actual parameter 3
+D:\Projects\raveninjector\techniques\ShellTechs.c(141,44): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+D:\Projects\raveninjector\techniques\ShellTechs.c(141,44): warning C4024: 'QueueUserAPC': different types for formal and actual parameter 3
+D:\Projects\raveninjector\techniques\ShellTechs.c(163,71): warning C4133: 'function': incompatible types - from 'size_t *' to 'PLARGE_INTEGER'
+  Generating code
+  0 of 16 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  raveninjector.vcxproj -> D:\Projects\raveninjector\Release\raveninjector.exe

@@ -15,42 +15,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="R4venInject0r\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShellcodeInjector.c">
+    <ClCompile Include="R4venInject0r\ShellcodeInjector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PeInjector.c">
+    <ClCompile Include="R4venInject0r\PeInjector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Encryption.c">
+    <ClCompile Include="R4venInject0r\Encryption.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="techniques\ShellTechs.c">
+    <ClCompile Include="R4venInject0r\ShellTechs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PeTechs.c">
+    <ClCompile Include="R4venInject0r\PeTechs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DllInjector.c">
+    <ClCompile Include="R4venInject0r\DllInjector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DllInjectionTechs.c">
+    <ClCompile Include="R4venInject0r\DllInjectionTechs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Techniques.h">
+    <ClInclude Include="R4venInject0r\Techniques.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="macros.h">
+    <ClInclude Include="R4venInject0r\macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="structs.h">
+    <ClInclude Include="R4venInject0r\structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Encryption.h">
+    <ClInclude Include="R4venInject0r\Encryption.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

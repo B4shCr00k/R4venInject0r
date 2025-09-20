@@ -2,7 +2,7 @@
 #include "macros.h"
 #include "structs.h"
 
-
+//
 void ProcessInjection(int PID,BYTE* shellcode,size_t size)
 {
 	HANDLE hProcess =  OpenProcess(PROCESS_ALL_ACCESS,FALSE,PID);

@@ -131,20 +131,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DllInjectionTechs.c" />
-    <ClCompile Include="DllInjector.c" />
-    <ClCompile Include="Encryption.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="PeInjector.c" />
-    <ClCompile Include="PeTechs.c" />
-    <ClCompile Include="ShellcodeInjector.c" />
-    <ClCompile Include="techniques\ShellTechs.c" />
+    <ClCompile Include="R4venInject0r\DllInjectionTechs.c" />
+    <ClCompile Include="R4venInject0r\DllInjector.c" />
+    <ClCompile Include="R4venInject0r\Encryption.c" />
+    <ClCompile Include="R4venInject0r\main.c" />
+    <ClCompile Include="R4venInject0r\PeInjector.c" />
+    <ClCompile Include="R4venInject0r\PeTechs.c" />
+    <ClCompile Include="R4venInject0r\ShellcodeInjector.c" />
+    <ClCompile Include="R4venInject0r\ShellTechs.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Encryption.h" />
-    <ClInclude Include="macros.h" />
-    <ClInclude Include="Techniques.h" />
-    <ClInclude Include="structs.h" />
+    <ClInclude Include="R4venInject0r\Encryption.h" />
+    <ClInclude Include="R4venInject0r\macros.h" />
+    <ClInclude Include="R4venInject0r\Techniques.h" />
+    <ClInclude Include="R4venInject0r\structs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
