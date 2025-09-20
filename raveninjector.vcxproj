@@ -131,7 +131,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Encryptor.c" />
+    <ClCompile Include="DllInjectionTechs.c" />
+    <ClCompile Include="DllInjector.c" />
+    <ClCompile Include="Encryption.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="PeInjector.c" />
     <ClCompile Include="PeTechs.c" />
@@ -139,7 +141,7 @@
     <ClCompile Include="techniques\ShellTechs.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\Encryptor.h" />
+    <ClInclude Include="Encryption.h" />
     <ClInclude Include="macros.h" />
     <ClInclude Include="Techniques.h" />
     <ClInclude Include="structs.h" />

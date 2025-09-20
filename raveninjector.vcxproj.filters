@@ -24,13 +24,19 @@
     <ClCompile Include="PeInjector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Encryptor.c">
+    <ClCompile Include="Encryption.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="techniques\ShellTechs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PeTechs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DllInjector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DllInjectionTechs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,7 +50,7 @@
     <ClInclude Include="structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Encryptor.h">
+    <ClInclude Include="Encryption.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

