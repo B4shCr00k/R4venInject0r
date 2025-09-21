@@ -363,3 +363,17 @@ MigrationBackup/
 FodyWeavers.xsd
 
 *.vs/
+bin/
+obj/
+Debug/
+Release/
+x64/
+*.exe
+*.pdb
+*.obj
+*.log
+*.idb
+*.ipdb
+*.iobj
+*.ilk
+*.tlog
