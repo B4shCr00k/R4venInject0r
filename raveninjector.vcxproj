@@ -141,10 +141,10 @@
     <ClCompile Include="R4venInject0r\ShellTechs.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="R4venInject0r\Encryption.h" />
-    <ClInclude Include="R4venInject0r\macros.h" />
-    <ClInclude Include="R4venInject0r\Techniques.h" />
-    <ClInclude Include="R4venInject0r\structs.h" />
+    <ClInclude Include="R4venInject0r\Header Files\Encryption.h" />
+    <ClInclude Include="R4venInject0r\Header Files\macros.h" />
+    <ClInclude Include="R4venInject0r\Header Files\Techniques.h" />
+    <ClInclude Include="R4venInject0r\Header Files\structs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

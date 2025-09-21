@@ -41,16 +41,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="R4venInject0r\Techniques.h">
+    <ClInclude Include="R4venInject0r\Header Files\Techniques.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="R4venInject0r\macros.h">
+    <ClInclude Include="R4venInject0r\Header Files\macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="R4venInject0r\structs.h">
+    <ClInclude Include="R4venInject0r\Header Files\structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="R4venInject0r\Encryption.h">
+    <ClInclude Include="R4venInject0r\Header Files\Encryption.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
