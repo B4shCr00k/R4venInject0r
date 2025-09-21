@@ -15,32 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="R4venInject0r\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\ShellcodeInjector.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\PeInjector.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\Encryption.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\ShellTechs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\PeTechs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\DllInjector.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R4venInject0r\DllInjectionTechs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="R4venInject0r\Header Files\Techniques.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -53,5 +27,31 @@
     <ClInclude Include="R4venInject0r\Header Files\Encryption.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="R4venInject0r\src\DllInjectionTechs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\DllInjector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\Encryption.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\PeInjector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\PeTechs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\ShellcodeInjector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R4venInject0r\src\ShellTechs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
