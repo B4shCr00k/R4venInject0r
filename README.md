@@ -15,7 +15,7 @@ i will keep updating with new techniques + maybe add a gui
 - LoadLibraryA Dll Injection (Normal dll injection)
 - LdrLoadDll Injection
 
-## Included Dll Injection Techniques
+## Included Shellcode Injection Techniques
 - Basic Shellcode Process Injection
 - ThreadHijacking
 - QueueUserAPCInjection
