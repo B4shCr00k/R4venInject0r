@@ -193,6 +193,7 @@ Tested On Windows 11
 
 should also work fine on windows 10
 
-![Keanu GIF](https://tenor.com/bgH6S.gif)
+![cyberpunk2077-keanu](https://github.com/user-attachments/assets/d0d91daf-3e1c-48ce-bdf4-459ae159024e)
+
 
 
