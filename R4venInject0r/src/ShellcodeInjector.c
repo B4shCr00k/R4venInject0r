@@ -1,7 +1,7 @@
-#include "techniques.h"
-#include "macros.h"
-#include "structs.h"
-#include "Encryption.h"
+#include "Header Files/techniques.h"
+#include "Header Files/macros.h"
+#include "Header Files/structs.h"
+#include "Header Files/Encryption.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

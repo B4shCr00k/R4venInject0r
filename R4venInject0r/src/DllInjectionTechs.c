@@ -1,6 +1,6 @@
-#include "Techniques.h"
-#include "macros.h"
-#include "structs.h"
+#include "Header Files/Techniques.h"
+#include "Header Files/macros.h"
+#include "Header Files/structs.h"
 
 
 DWORD __stdcall MM_Loader(DllInfos* data)

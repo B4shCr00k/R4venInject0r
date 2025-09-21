@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <Windows.h>
-#include "macros.h"
-#include "techniques.h"
+#include "Header Files/macros.h"
+#include "Header Files/techniques.h"
 
 
 

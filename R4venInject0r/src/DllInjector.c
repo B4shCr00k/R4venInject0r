@@ -1,6 +1,6 @@
-#include "macros.h"
-#include "structs.h"
-#include "techniques.h"
+#include "Header Files/macros.h"
+#include "Header Files/structs.h"
+#include "Header Files/techniques.h"
 
 
 peinfos ReadPe(char* path)

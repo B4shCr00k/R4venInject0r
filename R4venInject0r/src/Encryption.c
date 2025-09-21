@@ -1,7 +1,7 @@
-#include "Techniques.h"
-#include "macros.h"
-#include "structs.h"
-#include "Encryption.h"
+#include "Header Files/Techniques.h"
+#include "Header Files/macros.h"
+#include "Header Files/structs.h"
+#include "Header Files/Encryption.h"
 
 int Key_Gen()
 {
